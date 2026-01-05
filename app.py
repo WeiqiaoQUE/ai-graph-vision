@@ -86,6 +86,10 @@ def main():
 
     # A. 添加核心节点 (Top 100)
     for _, row in df_year.iterrows():
+        # =========== 新增这两行 ===========
+        if "Computer Science and Engineering" in row['display_name']:
+            continue # 跳过这个超级节点
+        # ================================
         node_id = row['id']
         category = row['category']
         
