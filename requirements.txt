@@ -1,5 +1,5 @@
 streamlit
 pandas
 networkx
-
 streamlit-agraph
+
