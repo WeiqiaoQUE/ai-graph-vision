@@ -106,8 +106,7 @@ def main():
             size=size,
             shape="dot",
             color=COLOR_MAP.get(category, DEFAULT_COLOR),
-            # [修改]：Tooltip 中增加全局最大值的参考信息
-            title=f"Node: {row['display_name']}\nCat: {category}\nWorks: {val}"
+            title=f"Node: {row['display_name']}\nCategory: {category}\nWorks Count: {val}"
         ))
         added_node_ids.add(node_id)
 
